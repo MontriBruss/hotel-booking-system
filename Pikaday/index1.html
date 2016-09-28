@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Pikaday</title>
+    <link rel="stylesheet" href="../Pikaday/css/pikaday.css">
+    <link rel="stylesheet" href="../Pikaday/css/site.css">
+</head>
+<body>
+    <h1>Pikaday</h1>
+    <label for="datepicker">Date:</label>
+    <br>
+    <input type="text" id="datepicker">
+
+    <script src="../Pikaday/pikaday.js"></script>
+    <script>
+
+    var picker = new Pikaday(
+    {
+        field: document.getElementById('datepicker'),
+        firstDay: 1,
+        minDate: new Date(),
+        maxDate: new Date(2020, 12, 31),
+        yearRange: [2000,2020]
+    });
+
+    </script>
+</body>
+</html>
